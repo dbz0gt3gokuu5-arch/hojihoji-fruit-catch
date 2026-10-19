@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#fff9e8"><title>ほじほじくんの フルーツキャッチ</title><link rel="stylesheet" href="style.css"></head>
+<body><main id="app">
+<section id="title" class="screen active">
+ <div class="eyebrow">まほうの おはなから、ぽんっ！</div>
+ <h1><span>ほじほじくんの</span><br>フルーツ<span class="orange">キャッチ</span></h1>
+ <div class="hero"><span class="hero-fruit left" data-fruit="orange"></span><div class="character" data-character></div><span class="hero-fruit right" data-fruit="strawberry"></span><span class="hero-star">✦</span></div>
+ <p class="medal-summary" data-medals></p><p class="intro">あつめて、にっこり。きみのフルーツずかん。</p>
+ <button class="primary" id="start">▶ スタート</button>
+ <div class="two"><button data-album>▦ ずかん <small id="progress">0 / 15</small></button><button id="how-button">☝ あそびかた</button></div>
+ <fieldset><legend>あそぶ はやさ</legend><div class="difficulty"><button data-mode="easy" aria-pressed="true">やさしい<small>ゆっくり・ずっと</small></button><button data-mode="normal" aria-pressed="false">ふつう<small>30びょう</small></button><button data-mode="challenge" aria-pressed="false">チャレンジ<small>30びょう</small></button></div></fieldset>
+ <button id="sound" class="quiet" aria-pressed="true">♫ おと：オン</button><p class="parent-note">こえ：VOICEVOX:ずんだもん</p>
+</section>
+<section id="how" class="screen"><div class="eyebrow">あそびかた</div><h2>フルーツを<br>キャッチしよう！</h2><div class="demo"><span data-fruit="orange"></span><img src="assets/basket.svg" alt="左右に動くカゴ"><b>←　☝　→</b></div><p>ゆびで カゴを うごかしてね！</p><p class="parent-note">おとしても だいじょうぶ。なんどでも！</p><button id="how-start" class="primary">▶ スタート</button><button data-home>タイトルへ</button></section>
+<section id="game" class="screen"><header class="hud"><div>キャッチ<strong id="score">0 <small>こ</small></strong></div><button id="end">おしまい</button><div>じかん<strong id="timer">∞</strong></div></header><div id="field"><div class="game-character character" data-character></div><div class="cloud c1"></div><div class="cloud c2"></div><div id="fruits"></div><div id="effects"></div><div id="basket"><img src="assets/basket.svg" alt="カゴ"></div><div id="countdown" aria-live="polite"></div><div id="cheer" aria-live="polite"></div><p id="hint">ゆびで カゴを うごかしてね！</p><div class="ground"></div></div></section>
+<section id="result" class="screen"><div class="eyebrow">いっぱい あそんだね</div><h2>やったー！</h2><div class="result-count"><span id="total">0</span> こ キャッチ！</div><p class="medal-summary" data-medals></p><p id="result-message">また いっしょに あそぼう！</p><div id="result-fruits" class="result-fruits"></div><button id="again" class="primary">▶ もういっかい！</button><div class="two"><button data-album>▦ ずかん</button><button data-home>タイトルへ</button></div></section>
+<section id="album" class="screen"><div class="album-head"><div><div class="eyebrow">あつめた たからもの</div><h2>フルーツずかん</h2></div><button id="album-back">もどる</button></div><p class="medal-summary" data-medals></p><p id="album-progress"></p><div class="progress-track"><div id="progress-bar"></div></div><div id="album-grid"></div><p class="parent-note">つかまえた フルーツが ここに のるよ！</p></section>
+<dialog id="medal-dialog" aria-labelledby="medal-heading"><div class="eyebrow">15しゅるい コンプリート！</div><h2 id="medal-heading">おめでとう！</h2><img class="big-medal" src="assets/gold-medal.svg" alt="星のついた金色のメダル"><h3>きんメダル ゲット！</h3><p id="medal-total"></p><p>ずかんが あたらしく なったよ。<br>もういちど あつめよう！</p><button id="medal-continue" class="primary">▶ つづけて あそぶ</button></dialog><p id="save-warning" hidden>このブラウザでは保存できません。図鑑は今回の画面を閉じるまで有効です。</p>
+</main><script src="assets/audio/voice-data.js"></script><script src="script.js"></script></body></html>
