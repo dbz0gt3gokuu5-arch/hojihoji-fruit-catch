@@ -1,0 +1,28 @@
+{
+  "credit": "VOICEVOX:ずんだもん",
+  "style": "ノーマル",
+  "style_id": 3,
+  "lines": {
+    "yatta": "やったー！",
+    "sugoi": "すごーい！",
+    "orange": "みかん！",
+    "banana": "バナナ！",
+    "strawberry": "いちご！",
+    "apple": "りんご！",
+    "grapes": "ぶどう！",
+    "peach": "もも！",
+    "pear": "なし！",
+    "pineapple": "パイナップル！",
+    "blueberry": "ブルーベリー！",
+    "cherry": "さくらんぼ！",
+    "kiwi": "キウイ！",
+    "watermelon": "すいか！",
+    "melon": "メロン！",
+    "mango": "マンゴー！",
+    "muscat": "シャインマスカット！",
+    "guide": "ゆびで、カゴを、うごかしてね！",
+    "ready": "フルーツを、キャッチしよう！",
+    "start": "スタート！",
+    "sound_on": "ずんだもんと、あそぶのだ！"
+  }
+}
